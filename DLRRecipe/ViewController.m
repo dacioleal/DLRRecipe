@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DLRDataManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    DLRDataManager *dataManager = [DLRDataManager sharedManager];
+    
+    NSManagedObjectContext *moc = dataManager.managedObjectContext;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

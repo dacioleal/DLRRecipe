@@ -13,6 +13,9 @@
 		F3A6516F1C0054B3009E4C25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A6516D1C0054B3009E4C25 /* Main.storyboard */; };
 		F3A651711C0054B3009E4C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A651701C0054B3009E4C25 /* Assets.xcassets */; };
 		F3A651741C0054B3009E4C25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A651721C0054B3009E4C25 /* LaunchScreen.storyboard */; };
+		F3A6517C1C0054D6009E4C25 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A6517B1C0054D6009E4C25 /* CoreData.framework */; };
+		F3A6517F1C005524009E4C25 /* DLRRecipe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3A6517D1C005524009E4C25 /* DLRRecipe.xcdatamodeld */; };
+		F3A651821C005583009E4C25 /* DLRDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A651811C005583009E4C25 /* DLRDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		F3A651701C0054B3009E4C25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A651731C0054B3009E4C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3A651751C0054B3009E4C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A6517B1C0054D6009E4C25 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F3A6517E1C005524009E4C25 /* DLRRecipe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DLRRecipe.xcdatamodel; sourceTree = "<group>"; };
+		F3A651801C005583009E4C25 /* DLRDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRDataManager.h; sourceTree = "<group>"; };
+		F3A651811C005583009E4C25 /* DLRDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A6517C1C0054D6009E4C25 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,7 @@
 			children = (
 				F3A651631C0054B3009E4C25 /* DLRRecipe */,
 				F3A651621C0054B3009E4C25 /* Products */,
+				F3A6517B1C0054D6009E4C25 /* CoreData.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,10 +71,13 @@
 				F3A651681C0054B3009E4C25 /* AppDelegate.m */,
 				F3A6516A1C0054B3009E4C25 /* ViewController.h */,
 				F3A6516B1C0054B3009E4C25 /* ViewController.m */,
+				F3A651801C005583009E4C25 /* DLRDataManager.h */,
+				F3A651811C005583009E4C25 /* DLRDataManager.m */,
+				F3A6517D1C005524009E4C25 /* DLRRecipe.xcdatamodeld */,
 				F3A6516D1C0054B3009E4C25 /* Main.storyboard */,
-				F3A651701C0054B3009E4C25 /* Assets.xcassets */,
 				F3A651721C0054B3009E4C25 /* LaunchScreen.storyboard */,
 				F3A651751C0054B3009E4C25 /* Info.plist */,
+				F3A651701C0054B3009E4C25 /* Assets.xcassets */,
 				F3A651641C0054B3009E4C25 /* Supporting Files */,
 			);
 			path = DLRRecipe;
@@ -149,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A6517F1C005524009E4C25 /* DLRRecipe.xcdatamodeld in Sources */,
+				F3A651821C005583009E4C25 /* DLRDataManager.m in Sources */,
 				F3A6516C1C0054B3009E4C25 /* ViewController.m in Sources */,
 				F3A651691C0054B3009E4C25 /* AppDelegate.m in Sources */,
 				F3A651661C0054B3009E4C25 /* main.m in Sources */,
@@ -300,6 +314,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3A6517D1C005524009E4C25 /* DLRRecipe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3A6517E1C005524009E4C25 /* DLRRecipe.xcdatamodel */,
+			);
+			currentVersion = F3A6517E1C005524009E4C25 /* DLRRecipe.xcdatamodel */;
+			path = DLRRecipe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F3A651591C0054B3009E4C25 /* Project object */;
 }
